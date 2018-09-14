@@ -1,0 +1,28 @@
+
+//C++//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+ using namespace std;
+
+ void main() 
+ {
+	 int i=1, numeropar=0, suma=0, N;
+	 cout<<"Calculo de los N priemeros numeros pares."<<endl;
+	 cout<<"Ingrese N"<<endl;
+	 cin>>N;
+
+	 while(i<=N)
+	 {
+		 numeropar = numeropar + 2;
+		 i=i+1;
+		 suma = suma + numeropar;
+	 }
+
+	 cout<<"La suma es: "<<suma<<endl;
+	 
+	 getch();
+
+ }
