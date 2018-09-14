@@ -24,7 +24,7 @@
 	cout<<"1.Si , 2.No"<<endl;
 	cin>>nacionalidad;
 
-	if(edad<18)
+	if(edad<18);
 		cout<<"Usted no puede votar en ninguna eleccion.";
 	if(edad>=18);
 	
