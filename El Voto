@@ -24,10 +24,9 @@
 	cout<<"1.Si , 2.No"<<endl;
 	cin>>nacionalidad;
 
-	if(edad<18);
+	if(edad<18){
 		cout<<"Usted no puede votar en ninguna eleccion.";
-	if(edad>=18);
-	
+	}else
 	{
 		if(antecedentes==2 && nacionalidad==1)
 			cout<<"Usted puede votar en las Elecciones Nacionales y Municipales."<<endl;
@@ -35,7 +34,7 @@
 			cout<<"Usted no puede votar en las Elecciones Nacionales y Municipales.";
 		if(antecedentes==2 && nacionalidad==2)
 			cout<<"Usted solamnente puede votar en las Elecciones Municipales.";
-		if(antecedentes==1 && nacionalidad==2)
+		1if(antecedentes==1 && nacionalidad==2)
 			cout<<"Usted no puede votar en las Elecciones Nacionales y Municipales.";
 	}
 	getch();
