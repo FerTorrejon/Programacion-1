@@ -1,0 +1,47 @@
+
+//C++//
+
+
+	
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+ void main() 
+ {
+	float edad, antecedentes, nacionalidad, n;
+		 
+	do{
+	
+	cout<<"Ingrese sus datos para ver si esta habilitado a votar."<<endl;
+
+	cout<<"Ingrese su edad."<<endl;
+	cin>>edad;
+
+	if(edad<18){
+		cout<<"Usted no puede votar en ninguna eleccion."<<endl;
+	}else{
+		cout<<"Tiene antecedentes penales?"<<endl;
+		cout<<"1.Si , 2.No"<<endl;
+		cin>>antecedentes;
+
+		cout<<"Usted tiene nacionalidad boliviana?"<<endl;
+		cout<<"1.Si , 2.No"<<endl;
+		cin>>nacionalidad;
+		
+		if(antecedentes==2 && nacionalidad==1)
+			cout<<"Usted puede votar en las Elecciones Nacionales y Municipales."<<endl;
+		if(antecedentes==1 && nacionalidad==1)
+			cout<<"Usted no puede votar en las Elecciones Nacionales y Municipales."<<endl;
+		if(antecedentes==2 && nacionalidad==2)
+			cout<<"Usted solamnente puede votar en las Elecciones Municipales."<<endl;
+		if(antecedentes==1 && nacionalidad==2)
+			cout<<"Usted no puede votar en las Elecciones Nacionales y Municipales."<<endl;
+	}
+	cout<< "Si quiere realizar otra consulta presione 1. Si quiere salir presione 0."<<endl;
+	cin>>n;
+	}while(n!=0);
+	getch();
+ }
