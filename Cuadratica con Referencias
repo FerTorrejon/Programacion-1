@@ -1,0 +1,43 @@
+
+//C++//
+
+//Cuadratica con Referencia
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+using namespace std;
+
+//Prototipos
+float discriminante(float a, float b, float c);
+void reales(float a, float b, float c, float &x1, float &x2);
+// & son variables por referencia es decir que cambian de valor en la funcion porque son punteros a las variables que lo llaman.
+
+void main()
+{
+	float a, b, c, valor1, valor2, d;
+	cout<<"Ingrese los valores de a, b y c."<<endl;
+	cin>>a>>b>>c;
+	d = discriminante(a,b,c);
+	if (d>0)
+		{
+		reales(a,b,c,valor1,valor2); //Cuando la funcion no devuelve nada - void
+		cout<<"Raiz 1: "<<valor1<<endl;
+		cout<<"Raiz 2: "<<valor2<<endl;
+		}
+	else 
+		cout<<"No son reales."<<endl;
+	getch();
+}
+float discriminante(float a, float b , float c)
+{
+	float d;
+	d = pow(b,2)-4*a*c;
+	return d; // Se debe devolver ya que fue declarado con float.
+}
+void reales (float a, float b, float c, float &x1, float &x2)
+{
+	x1=((-1)*b+sqrt(pow(b,2)-4*a*c)) / 2*a;
+	x2=((-1)*b-sqrt(pow(b,2)-4*a*c)) / 2*a;
+}
