@@ -5,6 +5,7 @@
 #include "stdafx.h"
 #include <iostream>
 #include "conio.h"
+#include "stdlib.h"
 #define MAX 100	
 
 using namespace std;
@@ -46,6 +47,7 @@ void main()
 		default:
 			cout<<"Opcion erronea."<<endl;break;
 	}
+		system("cls");
 	}while(opcion!=0);
 	getch();
 }	
